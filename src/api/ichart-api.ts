@@ -209,7 +209,7 @@ export interface IChartApi {
 	 *     console.log(`Crosshair moved to ${param.point.x}, ${param.point.y}. The time is ${param.time}.`);
 	 * }
 	 *
-	 * chart.subscribeClick(myCrosshairMoveHandler);
+	 * chart.subscribeCrosshairMove(myCrosshairMoveHandler);
 	 * ```
 	 */
 	subscribeCrosshairMove(handler: MouseEventHandler): void;
@@ -224,6 +224,15 @@ export interface IChartApi {
 	 * ```
 	 */
 	unsubscribeCrosshairMove(handler: MouseEventHandler): void;
+
+	/**
+	 * Move the crosshair to the specified position.
+	 *
+	 * @param x - horizontal pixel coordinate
+	 * @param y - vertical pixel coordinate
+	 * @param visible - true for the crosshair to be visible, false for invisible
+	 */
+	setCrossHair(x: number, y: number, visible: boolean): void;
 
 	/**
 	 * Returns API to manipulate a price scale.

@@ -1,3 +1,22 @@
+# About this fork
+
+This is a fork of TradingView's [Lightweight Charts](https://github.com/tradingview/lightweight-charts).
+I needed certain features that weren't included yet (and maybe never) in the official version of LWC.
+Specifically, I have an application that is very much like TradingView.com where each window can contain multiple charts, and each chart can have multiple indicator panes.
+
+[John Wallace](https://github.com/john-wallace-dev)
+March 2022
+
+## Multiple Panes
+
+Allows multiple panes below the main chart. I use them to display interactive indicators below the main chart. Implemented by [ntf](https://github.com/ntf) to satisfy requests from [Lightweight Charts issue 50](https://github.com/tradingview/lightweight-charts/issues/50).
+
+## Setting Crosshair Position
+
+Allows you to programmatically set the crosshair, which is useful when you want to synchronize the crosshair between multiple charts on one screen. Implemented by [trior](https://github.com/triorr) to satisfy requests from [Lightweight Charts issue 438](https://github.com/tradingview/lightweight-charts/issues/438).
+
+## From Main Branch
+
 <!-- markdownlint-disable no-inline-html first-line-h1 -->
 
 <div align="center">
@@ -16,7 +35,7 @@
 
 <!-- markdownlint-enable no-inline-html -->
 
-[Demos][demo-url] | [Documentation](https://tradingview.github.io/lightweight-charts/) | [Discord community](https://discord.gg/UC7cGkvn4U)
+[Demos][demo-url] | [Documentation](https://tradingview.github.io/lightweight-charts/) | [Discord community](https://discord.gg/UC7cGkvn4U) | [Reddit](https://www.reddit.com/r/TradingView/)
 
 TradingView Lightweight Charts are one of the smallest and fastest financial HTML5 charts.
 
